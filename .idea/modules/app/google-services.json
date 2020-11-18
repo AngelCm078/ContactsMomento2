@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "263430800320",
+    "firebase_url": "https://contactsmomento2.firebaseio.com",
+    "project_id": "contactsmomento2",
+    "storage_bucket": "contactsmomento2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263430800320:android:16ce56f60dad054976fe25",
+        "android_client_info": {
+          "package_name": "com.angelcm.contactsmomento2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263430800320-erhg5g487ecj11ojfnh59htuko40rgvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.angelcm.contactsmomento2",
+            "certificate_hash": "ee76ceee1d7a3f9e30800278025f48b42f7308c2"
+          }
+        },
+        {
+          "client_id": "263430800320-88qlbrclks721bac1v27uq72gdbid9b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg3k6L_fzLL93wC4HR2yWCc2qJj3PvcdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263430800320-88qlbrclks721bac1v27uq72gdbid9b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
