@@ -66,6 +66,7 @@ public class ContactAdapter extends BaseAdapter {
         item_correo = view.findViewById(R.id.item_correo);
         item_fecha = view.findViewById(R.id.item_fecha);
 
+
         item_nombre.setText(list.get(i).getNombre());
         item_celular.setText(list.get(i).getCelular());
         item_correo.setText(list.get(i).getCorreo());
