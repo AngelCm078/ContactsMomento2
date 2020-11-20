@@ -18,6 +18,7 @@ import com.angelcm.contactsmomento2.R;
 import com.angelcm.contactsmomento2.models.ContactsModel;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Random;
 
 public class ContactAdapter extends BaseAdapter {
@@ -59,6 +60,7 @@ public class ContactAdapter extends BaseAdapter {
         TextView item_nombre,item_celular, item_correo, item_fecha;
         ImageView item_imagen;
         String nombre, apellido, celular, fijo, correo, empresa;
+
 
         item_imagen = view.findViewById(R.id.item_imagen);
         item_nombre = view.findViewById(R.id.item_nombre);

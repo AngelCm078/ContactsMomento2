@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         list = new ArrayList<>();
 
         db.collection(collection)

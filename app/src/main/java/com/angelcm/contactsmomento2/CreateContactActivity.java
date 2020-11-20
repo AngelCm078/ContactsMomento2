@@ -38,6 +38,7 @@ public class CreateContactActivity extends AppCompatActivity {
         et_create_contact_fijo = findViewById(R.id.et_create_contact_fijo);
         et_create_contact_correo = findViewById(R.id.et_create_contact_correo);
         et_create_contact_empresa = findViewById(R.id.et_create_contact_empresa);
+        btn_create_contact_create = findViewById(R.id.btn_create_contact_create);
 
         btn_create_contact_create.setOnClickListener(new View.OnClickListener() {
             @Override
