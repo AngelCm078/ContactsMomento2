@@ -12,6 +12,14 @@ public class ContactsModel implements Serializable {
     private String fijo;
     private String correo;
     private String empresa;
+    private String idFireBase;
+
+    public ContactsModel(String nombre, String apellido, String celular, String idFireBase) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.celular = celular;
+        this.idFireBase = idFireBase;
+    }
 
     public ContactsModel() {
     }
@@ -38,7 +46,7 @@ public class ContactsModel implements Serializable {
     @Override
     public String toString(){
         return "ContactsModel{" +
-                "_id=" + _id +
+                "_id=" + idFireBase +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", celular='" + celular + '\'' +
@@ -103,5 +111,13 @@ public class ContactsModel implements Serializable {
 
     public void setEmpresa(String empresa) {
         this.empresa = empresa;
+    }
+
+    public String getIdFireBase() {
+        return idFireBase;
+    }
+
+    public void setIdFireBase(String idFireBase) {
+        this.idFireBase = idFireBase;
     }
 }

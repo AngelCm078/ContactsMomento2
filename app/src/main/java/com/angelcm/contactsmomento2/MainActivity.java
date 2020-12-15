@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()){
                                 Log.d(TAG, document.getId() + "=>" + document.getData());
                                 model = document.toObject(ContactsModel.class);
+                                model.setIdFireBase(document.getId());
                                 list.add(model);
                             }
                             adapter = new ContactAdapter(getApplicationContext(), list);
@@ -76,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
         lv_main_contacts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), String.valueOf("Celular: " + list.get(i).getCelular()), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), String.valueOf("Celular: " + list.get(i).toString()), Toast.LENGTH_LONG).show();
+                Detail(list.get(i).getIdFireBase());
             }
         });
 
@@ -86,5 +88,11 @@ public class MainActivity extends AppCompatActivity {
     private void goToCreateContact(){
         Intent create = new Intent(this, CreateContactActivity.class);
         startActivity(create);
+    }
+
+    private void Detail(String id){
+        Intent listDetail = new Intent( this, DetailActivity.class);
+        listDetail.putExtra("id", id);
+        startActivity(listDetail);
     }
 }
